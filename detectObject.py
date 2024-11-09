@@ -3,7 +3,7 @@ import argparse
 from ultralytics import YOLO
 
 class YOLOObjectDetection:
-    def __init__(self, model_path="yolov8m.pt", resolution=(640, 480)):
+    def __init__(self, model_path="Model/yolov8m.pt", resolution=(640, 480)):
         self.model = YOLO(model_path)
         self.model.to('cpu')
         self.frame_width, self.frame_height = resolution
